@@ -11,9 +11,12 @@
     "skipLibCheck": true
   },
   "include": [
-    "./api/*.ts",
-    "./*.js",
-    "src/**/*.ts",
-    "test/**/*.ts", "src/db/seed.js", "src/models/user.model.js", "src/models/memebers.model.js",
+		"./api/*.ts",
+		"./*.js",
+		"src/**/*.ts",
+		"test/**/*.ts",
+		"src/config/seed.js",
+		"src/models/user.model.js",
+		"src/models/memebers.model.js"
   ],
 }
