@@ -7,7 +7,7 @@ const router = express.Router();
 router.get("/", getAllNews);
 router.post("/", protect, createNews);
 router.get("/:id", protect, getNewsById);
-router.patch("/:id", protect, updateNews);
+router.put("/:id", protect, updateNews);
 router.delete("/:id", protect, deleteNews);
 
 export default router;
