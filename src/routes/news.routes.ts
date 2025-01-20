@@ -5,8 +5,8 @@ import protect from "../middleware/tempAuth";
 const router = express.Router();
 
 router.get("/", getAllNews);
+router.get("/:id", getNewsById);
 router.post("/", protect, createNews);
-router.get("/:id", protect, getNewsById);
 router.put("/:id", protect, updateNews);
 router.delete("/:id", protect, deleteNews);
 
