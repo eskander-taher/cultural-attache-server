@@ -63,3 +63,13 @@ export const deleteNews = async (req: Request, res: Response) => {
 		res.status(500).send(error);
 	}
 };
+
+// Get all important news items
+export const getImportantNews = async (req: Request, res: Response) => {
+	try {
+		const importantNews = await News.find({ isImportant: true });
+		res.status(200).send(importantNews);
+	} catch (error) {
+		res.status(500).send(error);
+	}
+};
